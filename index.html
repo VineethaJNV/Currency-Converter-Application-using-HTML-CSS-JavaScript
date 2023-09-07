@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter-Conver your currency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@400;600&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">CurrencyConverter</div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose a quantity: </label>
+            <input type="number" name="quantity" min="1" max="100">
+
+            <select name="currency">
+                <option value="INR">Indian rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EURO">European unions Euro</option>
+                <option value="YUAN">China's yuan</option>
+                <option value="RUBLE">Russia's ruble</option>
+                <option value="YEN">Japanese Yen</option>
+                <option value="Australian Dollar">Australian Dollar</option>
+                <option value="Pound">United Kingdom's Pound</option>
+                <option value="Israeli shekel">Israeli shekel</option>
+                <option value="Swiss franc">Swiss franc</option>
+            </select>
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+        
+        <div class="output">
+            <h2>converted currency values in different currencies</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; All rights reserved
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
